@@ -1,0 +1,140 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Warm gradient */
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Button Styling */
+button {
+    background: #ffcc00;
+    color: #222;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ff9900;
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    padding: 40px 10%;
+}
+
+/* List Styling */
+ul, ol {
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+    padding-left: 20px;
+}
+
+li {
+    font-size: 1.1rem;
+    padding: 5px 0;
+}
+
+/* Image Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 12px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* Video */
+.video iframe {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 10px;
+}
+
+/* Links */
+.links a {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffeb3b;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.links a:hover {
+    color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+footer img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 20px;
+    }
+    
+    section {
+        padding: 30px 5%;
+    }
+    
+    button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+    
+    .gallery img {
+        width: 90%;
+    }
+}
